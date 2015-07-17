@@ -1,0 +1,28 @@
+# Site settings
+title: Blueprint
+email: your-email@domain.com
+description: > # this means to ignore newlines until the next element
+  Joint effort to make resources and experiences with IATI support for NGOs available to others.
+#twitter_username: none
+github_username:  rowdydata
+
+baseurl: "/home/rolf/dev/IATI/rowdydata.github.io/_site" # the subpath of your site, e.g. /blog/
+url: "file://" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+
+collections:
+  programmes:
+    output: true
+  packages:
+    output: true
+  modules:
+    output: true

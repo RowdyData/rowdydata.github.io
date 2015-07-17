@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  <aside>
+    <p>About packages:</p>
+    <ul>
+      {% for package in site.packages %}
+        {% if page.packages contains package.name %}
+          <li>
+              <a class="" href="{{ package.url | prepend: site.baseurl }}">{{ package.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <aside>
+    <p>Included in programmes:</p>
+    <ul>
+      {% for user in site.programmes %}
+        {% if page.users contains user.name %}
+          <li>
+              <a class="" href="{{ user.url | prepend: site.baseurl }}">{{ user.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+
+</div>

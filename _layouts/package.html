@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="">
+
+  <header class="">
+    <h1 class="">{{ page.title }}</h1>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+
+    <p>Modules:</p>
+    <ul>
+      {% for module in site.modules %}
+        {% if page.modules contains module.name %}
+          <li>
+              <a class="" href="{{ module.url | prepend: site.baseurl }}">{{ module.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <br clear="all" />
+    <aside>
+      <p>Used by:</p>
+      <ul>
+        {% for user in site.programmes %}
+          {% if page.users contains user.name %}
+            <li>
+                <a class="" href="{{ user.url | prepend: site.baseurl }}">{{ user.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </aside>
+
+  </article>
+
+</div>

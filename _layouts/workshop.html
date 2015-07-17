@@ -1,0 +1,16 @@
+---
+layout: package
+---
+
+  {{ content }}
+
+  <aside>
+    <p>Target audiences:</p>
+    <ul>
+      {% for audience in page.targets %}
+        <li>
+            {{ audience }}
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>

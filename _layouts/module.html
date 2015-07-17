@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="">
+
+  <header class="">
+    <h1 class="">{{ page.title }}</h1>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+
+    <aside>
+      <p>Used in:</p>
+      <ul>
+        {% for package in site.packages %}
+          {% if package.modules contains page.name %}
+            <li>
+                <a class="" href="{{ package.url | prepend: site.baseurl }}">{{ package.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </aside>
+
+  </article>
+
+</div>

@@ -1,0 +1,18 @@
+---
+title: Modules
+layout: page
+---
+
+<div class="">
+
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  <ul class="post-list">
+    {% for module in site.modules %}
+      <li>
+          <a class="" href="{{ module.url | prepend: site.baseurl }}">{{ module.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
