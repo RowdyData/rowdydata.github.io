@@ -5,7 +5,7 @@ layout: default
 
   <header class="">
     {% if page.icon %}
-      <img alt="icon" class="icon" src="{{ page.icon | prepend:'pix/' | prepend: site.baseurl }}" />
+      <img alt="icon" class="icon" src="{{ page.icon | prepend:'/pix/' | prepend: site.baseurl }}" />
     {% endif %}
     <h1 class="">{{ page.title }}</h1>
   </header>
