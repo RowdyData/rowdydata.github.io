@@ -4,4 +4,51 @@ aside {
   background-color: $grey-color-light;
   padding: 1em;
   margin: 1em;
+  ul {
+    list-style: none;
+    li {
+      text-indent: -2em;
+      .link {
+        .icon {
+          width: 1.5em;
+          margin-right: 0.3em;
+        }
+        .noicon {
+          margin-right: 2em;
+        }
+      }
+    }
+  }
+}
+
+.block {
+  width: 22%;
+  height: 10em;
+  float: left;
+  background-color: $grey-color-light;
+  padding: 0.5em;
+  margin: 0;
+  border: 0.2em solid white;
+
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .icon {
+    margin-left: 0.5em;
+  }
+}
+
+header .icon {
+  float:right;
+  width: 3em;
+}
+.block .icon {
+  float:right;
+  width: 2em;
 }

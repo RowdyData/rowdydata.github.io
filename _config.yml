@@ -11,13 +11,6 @@ baseurl: "http://rowdydata.github.io"
 # Build settings
 markdown: kramdown
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "page"
-
 collections:
   programmes:
     output: true
@@ -25,3 +18,28 @@ collections:
     output: true
   modules:
     output: true
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "programmes"
+    values:
+      layout: "programme"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "packages"
+    values:
+      layout: "package"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "modules"
+    values:
+      layout: "module"

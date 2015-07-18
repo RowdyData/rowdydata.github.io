@@ -4,32 +4,35 @@ layout: default
 <div class="">
 
   <header class="">
+    {% if page.icon %}
+      <img alt="icon" class="icon" src="{{ page.icon | prepend:'pix/' | prepend: site.baseurl }}" />
+    {% endif %}
     <h1 class="">{{ page.title }}</h1>
   </header>
 
   <article class="post-content">
     {{ content }}
 
-    <p>Modules:</p>
-    <ul>
-      {% for module in site.modules %}
-        {% if page.modules contains module.name %}
-          <li>
-              <a class="" href="{{ module.url | prepend: site.baseurl }}">{{ module.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    {% if page.modules %}
+      <h2>Modules:</h2>
+      <ul>
+        {% for module in site.modules %}
+          {% if page.modules contains module.name %}
+            <li>
+                <a class="" href="{{ module.url | prepend: site.baseurl }}">{{ module.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
 
     <br clear="all" />
     <aside>
       <p>Used by:</p>
       <ul>
-        {% for user in site.programmes %}
-          {% if page.users contains user.name %}
-            <li>
-                <a class="" href="{{ user.url | prepend: site.baseurl }}">{{ user.title }}</a>
-            </li>
+        {% for element in site.programmes %}
+          {% if page.users contains element.name %}
+            <li>{% include element-link.html %}</li>
           {% endif %}
         {% endfor %}
       </ul>

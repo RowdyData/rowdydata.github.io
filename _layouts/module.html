@@ -4,6 +4,9 @@ layout: default
 <div class="">
 
   <header class="">
+    {% if page.icon %}
+      <img alt="icon" class="icon" src="{{ page.icon | prepend:'pix/' | prepend: site.baseurl }}" />
+    {% endif %}
     <h1 class="">{{ page.title }}</h1>
   </header>
 
@@ -13,10 +16,10 @@ layout: default
     <aside>
       <p>Used in:</p>
       <ul>
-        {% for package in site.packages %}
-          {% if package.modules contains page.name %}
+        {% for element in site.packages %}
+          {% if element.modules contains page.name %}
             <li>
-                <a class="" href="{{ package.url | prepend: site.baseurl }}">{{ package.title }}</a>
+              {% include element-link.html %}
             </li>
           {% endif %}
         {% endfor %}

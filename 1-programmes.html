@@ -3,16 +3,5 @@ title: Programmes
 layout: page
 ---
 
-<div class="">
-
-  <h1 class="page-heading">{{ page.title }}</h1>
-
-  <ul class="post-list">
-    {% for programme in site.programmes %}
-      <li>
-          <a class="" href="{{ programme.url | prepend: site.baseurl }}">{{ programme.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+{% assign elements = site.programmes %}
+{% include elements-overview.html %}

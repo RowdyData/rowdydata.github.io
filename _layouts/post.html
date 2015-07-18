@@ -15,11 +15,9 @@ layout: default
   <aside>
     <p>About packages:</p>
     <ul>
-      {% for package in site.packages %}
-        {% if page.packages contains package.name %}
-          <li>
-              <a class="" href="{{ package.url | prepend: site.baseurl }}">{{ package.title }}</a>
-          </li>
+      {% for element in site.packages %}
+        {% if page.packages contains element.name %}
+          <li>{% include element-link.html %}</li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -28,11 +26,9 @@ layout: default
   <aside>
     <p>Included in programmes:</p>
     <ul>
-      {% for user in site.programmes %}
-        {% if page.users contains user.name %}
-          <li>
-              <a class="" href="{{ user.url | prepend: site.baseurl }}">{{ user.title }}</a>
-          </li>
+      {% for element in site.programmes %}
+        {% if page.users contains element.name %}
+          <li>{% include element-link.html %}</li>
         {% endif %}
       {% endfor %}
     </ul>
