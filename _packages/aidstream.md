@@ -1,6 +1,7 @@
 ---
 title: AidStream Training
 name: aidstream-training
+icon: logo/aidstream.png
 layout: workshop
 users:
 - partos

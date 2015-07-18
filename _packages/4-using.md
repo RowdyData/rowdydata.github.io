@@ -1,7 +1,8 @@
 ---
 title: Cooking with IATI
 name: cooking-with-iati
-layout: package
+icon: icon/svg/stats-dots.svg
+layout: workshop
 users:
 - partos
 targets:

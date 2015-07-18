@@ -1,6 +1,7 @@
 ---
 title: Mapping the data to IATI
 name: mapping-iati
+icon: icon/svg/shuffle.svg
 layout: workshop
 users:
 - partos

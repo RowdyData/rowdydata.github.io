@@ -1,7 +1,8 @@
 ---
 title: Planning your IATI implementation
 name: planning-iati
-layout: package
+icon: icon/svg/calendar.svg
+layout: workshop
 users:
 - partos
 tags:

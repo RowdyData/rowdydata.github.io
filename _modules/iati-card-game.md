@@ -1,7 +1,7 @@
 ---
 title: IATI Card Game
 name: iati-card-game
-layout: module
+icon: icon/svg/insert-template.svg
 ---
 
 A game to learn about IATI fields

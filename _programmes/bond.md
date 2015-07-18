@@ -1,7 +1,7 @@
 ---
 title: Bond (United Kingdom)
 name: bond
-layout: programme
+icon: region-flags/svg/GB.svg
 ---
 
 # Bond
