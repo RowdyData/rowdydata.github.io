@@ -1,9 +1,7 @@
 ---
-title: Bond (United Kingdom)
+title: Bond
 name: bond
 icon: region-flags/svg/GB.svg
 ---
-
-# Bond
 
 Bond training and support programme...
