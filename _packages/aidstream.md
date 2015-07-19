@@ -9,6 +9,8 @@ users:
 targets:
 - small-iati-publishers
 - iati-prototypers
+tools:
+- aidstream
 ---
 
 Workshop to work with AidStream
