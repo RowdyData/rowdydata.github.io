@@ -14,14 +14,12 @@ layout: default
     {{ content }}
   </article>
 
-  <aside>
-    <h2>Packages used by {{ page.title }}</h2>
-    <ul class="">
-      {% for element in site.packages %}
-        {% if element.users contains page.name %}
-          <li> {% include element-link.html %}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </aside>
+  <h2>Packages used by {{ page.title }}</h2>
+  {% for element in site.packages %}
+    {% if element.users contains page.name %}
+      {% include element-block.html %}
+    {% endif %}
+  {% endfor %}
+
+  {% include legenda-packages.html %}
 </div>

@@ -2,7 +2,6 @@
 layout: default
 ---
 <div class="">
-
   <header class="">
     {% if page.icon %}
       <img alt="icon" class="icon" src="{{ page.icon | prepend:'/pix/' | prepend: site.baseurl }}" />
@@ -11,33 +10,41 @@ layout: default
   </header>
 
   <article class="post-content">
-    {{ content }}
-
-    {% if page.modules %}
-      <h2>Modules:</h2>
-      <ul>
-        {% for module in site.modules %}
-          {% if page.modules contains module.name %}
-            <li>
-                <a class="" href="{{ module.url | prepend: site.baseurl }}">{{ module.title }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    {% endif %}
-
-    <br clear="all" />
     <aside>
-      <p>Used by:</p>
+      <h1>Target audiences:</h1>
       <ul>
-        {% for element in site.programmes %}
-          {% if page.users contains element.name %}
-            <li>{% include element-link.html %}</li>
-          {% endif %}
+        {% for audience in page.targets %}
+          <li>
+              {{ audience }}
+          </li>
         {% endfor %}
       </ul>
     </aside>
 
+    <blockquote>
+      <p>{{ page.description }}</p>
+    </blockquote>
+
+    {{ content }}
+
+    {% if page.modules %}
+      <h1>Modules</h1>
+      <p>Modules used in this {{ page.layout }}</p>
+      {% include elements-selection.html elements = site.modules context = page.modules %}
+    {% endif %}
+
   </article>
+
+  <br clear="all" />
+  <aside>
+    <h1>Used by:</h1>
+    <ul>
+      {% for element in site.programmes %}
+        {% if page.users contains element.name %}
+          <li>{% include element-link.html %}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
 
 </div>

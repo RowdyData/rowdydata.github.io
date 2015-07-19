@@ -1,0 +1,33 @@
+{% if page.schedule %}
+<h1>Facilitator Schedule</h1>
+<table>
+  <thead>
+    <tr class="header">
+      <th align="left">Time</th>
+      <th align="left">Duration</th>
+      <th align="left">What</th>
+      <th align="left">Format</th>
+      <th align="left">Who</th>
+      <th align="left">Needed</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in page.schedule %}
+    <tr class="{% cycle 'odd', 'even' %}">
+      <td align="left">{{ item.time }}</td>
+      <td align="left">{{ item.duration }}</td>
+      <td align="left">{{ item.what }}</td>
+      <td align="left">{{ item.format }}</td>
+      <td align="left">{{ item.who }}</td>
+      <td align="left">
+        <ul>
+          {% for i in item.needed %}
+          <li>{{ i }}</li>
+          {% endfor %}
+        </ul>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
