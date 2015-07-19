@@ -9,7 +9,7 @@ github_username:  rowdydata
 baseurl: "http://rowdydata.github.io"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 collections:
   programmes:
@@ -17,6 +17,10 @@ collections:
   packages:
     output: true
   modules:
+    output: true
+  recipes:
+    output: true
+  tools:
     output: true
 
 defaults:
