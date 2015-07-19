@@ -9,8 +9,8 @@ You can have a look at
 or at
 [our Waffle board](https://waffle.io/RowdyData/rowdydata.github.io)
 
-[![Issues Ready](https://waffle.io/RowdyData/rowdydata.github.io.svg?label=ready&title=Ready)](https://waffle.io/RowdyData/rowdydata.github.io)
-[![Issues in Progress](https://waffle.io/RowdyData/rowdydata.github.io.svg?label=in%20progress&title=In%20Progress)](https://waffle.io/RowdyData/rowdydata.github.io)
+[![Issues Ready](https://badge.waffle.io/RowdyData/rowdydata.github.io.svg?label=ready&title=Ready)](https://waffle.io/RowdyData/rowdydata.github.io)
+[![Issues in Progress](https://badge.waffle.io/RowdyData/rowdydata.github.io.svg?label=in%20progress&title=In%20Progress)](https://waffle.io/RowdyData/rowdydata.github.io)
 
 Our recent throughput -- remember: we just started :-)
 
