@@ -14,7 +14,7 @@ markdown: redcarpet
 collections:
   programmes:
     output: true
-  packages:
+  sessions:
     output: true
   modules:
     output: true
