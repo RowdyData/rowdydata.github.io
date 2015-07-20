@@ -14,12 +14,12 @@ layout: default
     {{ content }}
   </article>
 
-  <h2>Packages used by {{ page.title }}</h2>
-  {% for element in site.packages %}
+  <h2>Sessions used by {{ page.title }}</h2>
+  {% for element in site.sessions %}
     {% if element.users contains page.name %}
       {% include element-block.html %}
     {% endif %}
   {% endfor %}
 
-  {% include legenda-packages.html %}
+  {% include legenda-sessions.html %}
 </div>
