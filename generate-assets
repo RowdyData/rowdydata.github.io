@@ -1,0 +1,5 @@
+#! /bin/bash
+
+# find any Ditaa files and create their PNG version
+find . -type f -not -path "./_site/*" \
+  -name "*.ditaa" -execdir sh -c 'ditaa {} `basename {} .ditaa`.png'  \;
