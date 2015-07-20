@@ -16,9 +16,9 @@ collections:
     output: true
   sessions:
     output: true
-  modules:
+  exercises:
     output: true
-  recipes:
+  docs: # cannot use 'documents' because that has special meaning in Jekyll
     output: true
   tools:
     output: true
@@ -44,6 +44,6 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "modules"
+      type: "exercises"
     values:
-      layout: "module"
+      layout: "exercise"

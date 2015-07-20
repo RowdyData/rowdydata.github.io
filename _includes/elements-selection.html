@@ -1,5 +1,7 @@
+<div class="clearfix">
 {% for element in include.elements %}
   {% if include.context contains element.name %}
     {% include element-block.html %}
   {% endif %}
 {% endfor %}
+</div>
