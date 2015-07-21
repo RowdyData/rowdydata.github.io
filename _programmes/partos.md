@@ -3,6 +3,7 @@ title: Partos
 description: Programme for Dutch NGOs
 name: partos
 icon: region-flags/svg/NL.svg
+contact: [Anne-marie Heemskerk](mailto:amh@partos.nl)
 ---
 <!--- link Aidstream text to tool block. -->
 
