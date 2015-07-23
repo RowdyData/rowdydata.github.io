@@ -22,6 +22,8 @@ collections:
     output: true
   tools:
     output: true
+  about:
+    output: true
 
 defaults:
   -
