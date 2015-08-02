@@ -1,10 +1,10 @@
 ---
 title: "0 to IATI in 15 minutes"
+description: "Quick introduction into the basics of producing an IATI file"
+icon: icon/svg/display.svg
 layout: slides
 transition: convex
 ---
-
-
 
 {% include slides-start %}
 <!-- first column -->
