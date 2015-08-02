@@ -125,12 +125,11 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-    font-size: 15px;
+pre {
+    font-size: 12px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #fff;
 }
 
 code {
@@ -138,13 +137,9 @@ code {
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
     > code {
         border: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
     }
 }
 

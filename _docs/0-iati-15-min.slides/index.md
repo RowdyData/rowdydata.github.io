@@ -1,11 +1,13 @@
 ---
+title: "0 to IATI in 15 minutes"
 layout: slides
 transition: convex
 ---
 
 
 
-<section>
+{% include slides-start %}
+<!-- first column -->
 
 {% include slides-start %}
 # 0 to IATI in 15 minutes
@@ -20,8 +22,8 @@ transition: convex
 
 {% include slides-end %}
 
-</section>
-<section>
+{% include slides-next %}
+<!-- next column -->
 
 {% include slides-start %}
 
@@ -51,7 +53,7 @@ from presentation...
 
 ...to raw data
 
-{% highlight xml %}
+~~~xml
 <iati-activity default-currency="EUR" last-updated-datetime="2015-02-12T09:09:25+00:00" xml:lang="en">
   <iati-identifier>NL-KVK-41160054-111227</iati-identifier>
   <title>Strengthening youth voices in peace building</title>
@@ -80,12 +82,14 @@ from presentation...
   </budget>
   <!-- ... -->
 </iati-activity>
-{% endhighlight %}
+~~~
+{: .stretch}
 
 {% include slides-end %}
-</section>
 
-<section>
+{% include slides-next %}
+<!-- next column -->
+
 {% include slides-start %}
 
 # How?
@@ -110,10 +114,11 @@ from presentation...
 
 # Next...
 
-## Ok, I have an Activities File.
-## Now what?
+## Ok, I have an Activities File. Now what?
 
-<div style="float:right; width: 45%">![](/pix/iati-post.png)</div>
-<div style="float:left; width: 45%">![](/pix/iati-activity-file.png)</div>
+![](/pix/iati-post.png){: .left-half}
+![](/pix/iati-activity-file.png){: .right-half}
 {% include slides-end %}
-</section>
+
+{% include slides-end %}
+<!-- close columns -->
