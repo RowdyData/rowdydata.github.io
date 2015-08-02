@@ -26,22 +26,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/css/reveal.css"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js/css/reveal.css"/>
     {%if page.theme %}
-      <link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/css/theme/{{ page.theme }}.css"/>
+      <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js/css/theme/{{ page.theme }}.css"/>
     {% else %}
-      <link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/css/theme/white.css" id="theme"/>
+      <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js-extra/css/white.css" id="theme"/>
     {% endif %}
 
     <!-- Code syntax highlighting -->
-    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/lib/css/zenburn.css"/> -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/lib/highlight.js/styles/github.css"/>
 
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '{{ "/reveal.js/css/print/pdf.css" | prepend: site.baseurl }}' : '{{ "/reveal.js/css/print/paper.css" | prepend: site.baseurl }}';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '{{ "/lib/reveal.js/css/print/pdf.css" | prepend: site.baseurl }}' : '{{ "/lib/reveal.js/css/print/paper.css" | prepend: site.baseurl }}';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
@@ -62,8 +62,8 @@
       </div>
     </div>
 
-    <script src="{{ "/reveal.js/lib/js/head.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/reveal.js/js/reveal.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/lib/reveal.js/lib/js/head.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/lib/reveal.js/js/reveal.js" | prepend: site.baseurl }}"></script>
     <script>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
@@ -80,12 +80,12 @@
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: '{{ "/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function() { return !document.body.classList; } },
-          { src: '{{ "/reveal.js/plugin/markdown/marked.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{ "/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          // { src: '{{ "/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '{{ "/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
-          { src: '{{ "/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
+          { src: '{{ "/lib/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function() { return !document.body.classList; } },
+          { src: '{{ "/lib/reveal.js/plugin/markdown/marked.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ "/lib/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ "/lib/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ "/lib/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
+          { src: '{{ "/lib/reveal.js-extra/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
         ]
       });
 

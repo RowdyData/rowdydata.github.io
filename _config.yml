@@ -9,7 +9,14 @@ github_username:  rowdydata
 #baseurl: "" -- not needed when using 'jekyll serve' to test locally
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+  # syntax_highlighter: rouge
+
+highlighter: coderay
 
 collections:
   programmes:
