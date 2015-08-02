@@ -21,29 +21,40 @@ aside {
   }
 }
 
-.block {
-  width: 10em;
+.panel {
+  width: 24%;
   height: 10em;
   float: left;
-  background-color: $grey-color-light;
   padding: 0.3em;
   margin: 0.2em;
   overflow: hidden;
 
-  h2 {
-    font-size: 13px;
+  .panel-heading {
     font-weight: bold;
-  }
-
-  p {
     font-size: 13px;
+    padding: 0;
+    .icon {
+      margin-left: 0.5em;
+      float: right;
+      height: 1.5em;
+    }
   }
 
-  .icon {
-    margin-left: 0.5em;
+  .panel-body {
+    font-size: 13px;
+    padding: 0;
   }
 }
 
+.legenda .panel {
+  height: 3.5em;
+}
+
+div.programme,
+div.exercise,
+div.page {
+  background-color: $grey-color-light;
+}
 div.workshop {
   background-color: #eeee99;
 }
@@ -106,4 +117,12 @@ article table {
 .right-half {
   width: 45%;
   float: right;
+
+div.btn {
+  img {
+    height: 1.5em;
+  }
+  a {
+    text-decoration: none;
+  }
 }
