@@ -50,9 +50,7 @@ aside {
   height: 3.5em;
 }
 
-div.programme,
-div.exercise,
-div.page {
+div.panel {
   background-color: $grey-color-light;
 }
 div.workshop {
@@ -104,6 +102,10 @@ article table {
       margin-left: 0.5em;
     }
   }
+}
+
+.reveal .slides {
+  text-align: left !important;
 }
 
 div.btn {

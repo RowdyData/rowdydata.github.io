@@ -1,100 +1,100 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <title>test</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
-  <style type="text/css">code{white-space: pre;}</style>
-  <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #303030; color: #cccccc; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; }
-td.sourceCode { padding-left: 5px; }
-pre, code { color: #cccccc; background-color: #303030; }
-code > span.kw { color: #f0dfaf; } /* Keyword */
-code > span.dt { color: #dfdfbf; } /* DataType */
-code > span.dv { color: #dcdccc; } /* DecVal */
-code > span.bn { color: #dca3a3; } /* BaseN */
-code > span.fl { color: #c0bed1; } /* Float */
-code > span.ch { color: #dca3a3; } /* Char */
-code > span.st { color: #cc9393; } /* String */
-code > span.co { color: #7f9f7f; } /* Comment */
-code > span.ot { color: #efef8f; } /* Other */
-code > span.al { color: #ffcfaf; } /* Alert */
-code > span.fu { color: #efef8f; } /* Function */
-code > span.er { color: #c3bf9f; } /* Error */
-code > span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
-code > span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
-code > span.sc { color: #dca3a3; } /* SpecialChar */
-code > span.vs { color: #cc9393; } /* VerbatimString */
-code > span.ss { color: #cc9393; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { } /* Variable */
-code > span.cf { color: #f0dfaf; } /* ControlFlow */
-code > span.op { color: #f0efd0; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
-code > span.at { } /* Attribute */
-code > span.do { color: #7f9f7f; } /* Documentation */
-code > span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
-code > span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
-code > span.in { color: #7f9f7f; font-weight: bold; } /* Information */
-  </style>
-  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
-  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-  <script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      {% if page.title %}
+        {{ page.title }} | {{ site.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
+
+    <meta name="author" content="{{ site.author }}" />
+
+    <!-- Description -->
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}" />
+    {% else %}
+      <meta name="description" content="{{ site.description }}">
+    {% endif %}
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <!-- Bootstrap -->
+    <link href="{{site.baseurl}}/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="{{site.baseurl}}/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js-extra/css/reveal.css"/>
+    {%if page.theme %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js/css/theme/{{ page.theme }}.css"/>
+    {% else %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/lib/reveal.js-extra/css/white.css" id="theme"/>
+    {% endif %}
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/lib/highlight.js/styles/github.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = 'reveal.js/css/print/pdf.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '{{ "/lib/reveal.js/css/print/pdf.css" | prepend: site.baseurl }}' : '{{ "/lib/reveal.js/css/print/paper.css" | prepend: site.baseurl }}';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-  </script>
-  <!--[if lt IE 9]>
-  <script src="reveal.js/lib/js/html5shiv.js"></script>
-  <![endif]-->
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
-      {{ content }}
+    </script>
+
+    <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}" />
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        {{ content }}
+      </div>
     </div>
-  </div>
 
-
-  <script src="reveal.js/lib/js/head.min.js"></script>
-  <script src="reveal.js/js/reveal.js"></script>
-
-  <script>
-
-      // Full list of configuration options available here:
+    <script src="{{ "/lib/reveal.js/lib/js/head.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/lib/reveal.js/js/reveal.js" | prepend: site.baseurl }}"></script>
+    <script>
+      // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,         // Display controls in the bottom right corner
-        progress: true,         // Display a presentation progress bar
-        history: true,          // Push each slide change to the browser history
-        center: true,                       // Vertical centering of slides
-        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
-        slideNumber: false,                // Display the page number of the current slide
-        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        {%if page.transition %}
+          transition: '{{page.transition}}',
+        {% else %}
+          transition: 'slide', // none/fade/slide/convex/concave/zoom
+        {% endif %}
 
-        // Optional libraries used to extend on reveal.js
+        // Optional reveal.js plugins
         dependencies: [
-          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
-//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-]});
+          { src: '{{ "/lib/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function() { return !document.body.classList; } },
+          { src: '{{ "/lib/reveal.js/plugin/markdown/marked.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ "/lib/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ "/lib/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ "/lib/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
+          { src: '{{ "/lib/reveal.js-extra/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
+        ]
+      });
+
     </script>
-    </body>
+
+  </body>
 </html>
