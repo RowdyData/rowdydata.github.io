@@ -12,6 +12,14 @@ transition: convex
 {% include slides-start %}
 # 0 to IATI in 15 minutes
 
+<aside class="notes">
+
+A very quick introduction into producing IATI files
+
+The main goal of IATI is to move from a complex system of producing different
+data sets and reports for each use...
+</aside>
+
 {% include slides-next %}
 
 ![](/pix/iati-pre.png)
@@ -124,7 +132,7 @@ from presentation...
 ## Ok, I have an Activities File. Now what?
 
 ![](/pix/iati-post.png){: .col-md-5}
-![](/pix/iati-activity-file.png){: .col-md-5 .col-md-offset-2}
+![](/pix/iati-activity-file.png){: .col-md-6 .col-md-offset-1}
 {% include slides-end %}
 
 {% include slides-end %}
