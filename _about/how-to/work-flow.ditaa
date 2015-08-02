@@ -1,0 +1,22 @@
++-----------------+   +-----------------+
+| Issues- things  |   |                 |
+| to be added or  |<--+ Generated pages |
+| changed on the  |   | for the website |
+| site.           |   |                 |
++--------+--------+   +-----------------+
+         |                     ^
+         v                     |
++-----------------+   +--------+--------+
+| Fork- your copy |   |                 |
+| of the site and |   | Source code for |
+| a branch to fix |   | the website     |
+| an issue.       |   |                 |
++--------+--------+   +-----------------+
+         |                     ^
+         v                     |
++-----------------+   +--------+--------+
+| Set of changes  |   | Pull request-   |
+| to the source   +-->| review and      |
+| to be included  |   | discussion of   |
+| in the website. |   | the changes.    |
++-----------------+   +-----------------+

@@ -21,7 +21,24 @@
         {% endfor %}
       </div>
     </nav>
-
   </div>
+
+  {% if page.status %}
+    <div class="wrapper">
+      {% case page.status %}
+      {% when 'Placeholder' %}
+        <div class="alert alert-danger">
+          <strong>Placeholder:</strong>
+          There is no content for this page yet...
+        </div>
+      {% when 'TBC' %}
+        <div class="alert alert-warning">
+          <strong>To be completed:</strong>
+          This page is under construction, so it is incomplete and may change often.
+        </div>
+      {% else %}
+      {% endcase %}
+    </div>
+  {% endif %}
 
 </header>
