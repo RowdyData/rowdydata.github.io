@@ -1,7 +1,7 @@
 ---
 title: "0 to IATI in 15 minutes"
 description: "Quick introduction into the basics of producing an IATI file"
-icon: icon/svg/display.svg
+fa-icon: fa-desktop
 layout: slides
 transition: convex
 ---
