@@ -97,9 +97,9 @@ article table {
     float: left;
     margin-right: 0.5em;
     padding: 0.3em;
-    img {
+    img, .icon {
       float: right;
-      margin-left: 0.5em;
+      margin-left: 5px;
     }
   }
 }
@@ -115,4 +115,8 @@ div.btn {
   a {
     text-decoration: none;
   }
+}
+
+.icon.fa {
+  padding: 4px 2px;
 }

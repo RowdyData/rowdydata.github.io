@@ -1,5 +1,6 @@
 ---
 title: "Recipe: Spaghetti à la Hivos"
+fa-icon: fa-list-ol
 ---
 
 
