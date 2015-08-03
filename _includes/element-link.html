@@ -1,8 +1,12 @@
 <a class="link" href="{{ element.url | prepend: site.baseurl }}">
-  {% if element.icon %}
-    <img alt="icon" class="icon" src="{{ element.icon | prepend:'/pix/' | prepend: site.baseurl }}" />
+  {% if element.fa-icon %}
+    <span class="icon fa fa-2x {{element.fa-icon}}"></span>
   {% else %}
-    <span class="noicon"></span>
+    {% if element.icon %}
+      <img alt="icon" class="icon" src="{{ element.icon | prepend:'/pix/' | prepend: site.baseurl }}" />
+    {% else %}
+      <span class="noicon"></span>
+    {% endif %}
   {% endif %}
   {{ element.title }}
 </a>
