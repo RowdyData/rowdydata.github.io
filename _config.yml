@@ -16,7 +16,7 @@ kramdown:
   enable_coderay: true
   # syntax_highlighter: rouge
 
-highlighter: coderay
+highlighter: pygments
 
 collections:
   programmes:
