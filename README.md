@@ -52,7 +52,7 @@ Simply call ```./generate-assets``` in a suitable terminal window on a unix-styl
 machine. Then call ```jekyll build``` to copy the new assets into your local
 version of the website.
 
-Some additional tools are needed to be able to do all of this.
+Some additional tools are needed to be able to do this.
 
 (This is an area to improve in the future.)
 
