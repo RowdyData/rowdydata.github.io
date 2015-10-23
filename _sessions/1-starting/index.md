@@ -14,6 +14,9 @@ exercises:
 - personas
 docs:
 - 0-iati-15-min.slides
+- Many Ways to Use IATI Data.pptx
+- Persona template.docx
+- IATI Customer journey.docx
 schedule:
 -
   time: "13:00"

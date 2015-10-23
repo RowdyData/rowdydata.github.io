@@ -1,7 +1,8 @@
 ---
 title: "0 to IATI in 15 minutes"
 name: 0-iati-15-min.slides
-description: "Quick introduction into the basics of producing an IATI file"
+description: >
+  Quick introduction into the basics of IATI, and what you will encounter when starting to produce IATI data.
 fa-icon: fa-desktop
 layout: slides
 transition: convex
