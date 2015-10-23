@@ -27,12 +27,18 @@ layout: default
 
     {{ content }}
 
-    {% if page.modules %}
-      <h1>Modules</h1>
-      <p>Modules used in this {{ page.layout }}</p>
-      {% include elements-selection.html elements = site.modules context = page.modules %}
+    {% if page.docs %}
+      <h1>Materials</h1>
+      {% include elements-selection.html elements = site.docs context = page.docs %}
+      {% include legenda-documents.html %}
     {% endif %}
 
+    {% if page.exercises %}
+      <h1>Exercises</h1>
+      {% include elements-selection.html elements = site.exercises context = page.exercises %}
+    {% endif %}
+
+    {% include schedule.html %}
   </article>
 
   <br clear="all" />
