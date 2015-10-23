@@ -7,7 +7,7 @@ users:
 - partos
 targets:
 - familiar-with-iati
-modules:
+exercises:
 - recipe-oxfam-greens
 - recipe-hivos-spaghetti
 ---
