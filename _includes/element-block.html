@@ -1,4 +1,10 @@
+{% if include.description %}
+  {% assign description = include.description %}
+{% else %}
+  {% assign description = element.description %}
+{% endif %}
+
 <div class="panel {{ element.layout }}">
   <div class="panel-heading">{% include element-link.html %}</div>
-  <div class="panel-body">{{ element.description }}</div>
+  <div class="panel-body">{{ description }}</div>
 </div>
