@@ -1,6 +1,8 @@
 ---
 title: "0 to IATI in 15 minutes"
-description: "Quick introduction into the basics of producing an IATI file"
+name: 0-iati-15-min.slides
+description: >
+  Quick introduction into the basics of IATI, and what you will encounter when starting to produce IATI data.
 fa-icon: fa-desktop
 layout: slides
 transition: convex
@@ -29,15 +31,15 @@ transition: convex
 
 # IATI Standard
 
-## Goal
+### Goal
 
 - Exchange information on development activities
 
-## Who
+### Who
 
 - Multi-stakeholder: donors, NGOs, recipients, watch dogs
 
-## Evolving
+### Evolving
 
 - Version 1.01 in February 2011
 - Version 1.04 in May 2014
@@ -92,6 +94,12 @@ from presentation...
 ~~~
 {: .stretch}
 
+{% include slides-next %}
+
+## Various starting points
+
+![](starting-points.png){: .col-md-7 .col-md-offset-1}
+
 {% include slides-end %}
 
 {% include slides-next %}
@@ -105,26 +113,157 @@ from presentation...
 
 # Steps to take
 
-## Start
+### Start
 
 - Implementation schedule
 
-## Scope and planning
+### Scope and planning
 
-## Getting the data in shape
+### Getting the data in shape
 
-## Publish
+### Publish
 
 - Organisation and Activities files
 
 {% include slides-next %}
 
+# Implementation schedule
+
+![](/pix/iati-implementation-schedule.png)
+
+{% include slides-next %}
+
+# Organisation File
+
+![](/pix/iati-organisation-file.png)
+
+{% include slides-next %}
+
+# Activities File
+
+![](/pix/iati-activity-file.png)
+
+{% include slides-end %}
+
+{% include slides-next %}
+<!-- next column -->
+
+{% include slides-start %}
+
+# Aspects
+
+### Organisational
+
+- Why, with whom?
+
+### Technical
+
+- Which data, which tools?
+
+### Legal
+
+- Liability, rights, security?
+
+{% include slides-next %}
+
+# Stakeholders
+
+### Internal
+
+- Form an "open data team"
+- Involve multiple disciplines
+
+### Partners
+
+- Who owns the data?
+- What can they do with your data?
+
+### Donors
+
+- What do they want?
+- What do they offer?
+
+{% include slides-next %}
+
+# Which data?
+
+### What is an "activity"?
+
+- Programme, project, unit, ...
+
+### Which programmes or projects?
+
+### Which details?
+
+- Geographic locations?
+- Targets and results?
+- Budgets and disbursements?
+- Commitments and expenses?
+
+{% include slides-next %}
+
+# Exclusions and thresholds
+
+### Grounds for exclusion (“open, unless”)
+
+- International relations
+- Safety and security
+- Personal information
+- Commercial information
+- Legally excluded
+
+### Threshold values
+
+{% include slides-next %}
+
+# Licenses
+
+### Intellectual property rights
+
+- Copyright
+- Database rights
+
+### Right to reuse
+
+- Public domain or attribution-only
+
+### Liability
+
+- Disclaimer/proclaimer
+- Purpose of the data, quality
+
+{% include slides-next %}
+
+# Tools
+
+### Input in an online tool
+
+- Few data
+- No own system
+
+### Convert spreadsheets
+
+- More data
+- Available as structured data
+
+### Integrate in project managent software
+
+- Lots of data
+- Own systems and IT capacity
+
+{% include slides-end %}
+
+{% include slides-next %}
+<!-- next column -->
+
+{% include slides-start %}
+
 # Next...
 
 ## Ok, I have an Activities File. Now what?
 
-![](/pix/iati-post.png){: .col-md-5}
-![](/pix/iati-activity-file.png){: .col-md-5 .col-md-offset-2}
+![](/pix/iati-activity-file.png){: .col-md-5}
+![](/pix/iati-post.png){: .col-md-5 .col-md-offset-2}
 {% include slides-end %}
 
 {% include slides-end %}
