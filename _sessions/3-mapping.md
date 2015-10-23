@@ -7,7 +7,7 @@ users:
 - partos
 targets:
 - familiar-with-iati
-modules:
+exercises:
 - iati-card-game
 ---
 
