@@ -1,6 +1,24 @@
-<a class="link" href="{{ element.url | prepend: site.baseurl }}">
-  {% if element.fa-icon %}
-    <span class="icon fa fa-2x {{element.fa-icon}}"></span>
+{% if include.fa-icon %}
+  {% assign fa-icon = include.fa-icon %}
+{% elsif element.fa-icon %}
+  {% assign fa-icon = element.fa-icon %}
+{% endif %}
+
+{% if include.title %}
+  {% assign title = include.title %}
+{% else %}
+  {% assign title = element.title %}
+{% endif %}
+
+{% if include.url %}
+  {% assign url = include.url %}
+{% else %}
+  {% assign url = element.url | prepend: site.baseurl %}
+{% endif %}
+
+<a class="link" href="{{ url }}">
+  {% if fa-icon %}
+    <span class="icon fa fa-2x {{fa-icon}}"></span>
   {% else %}
     {% if element.icon %}
       <img alt="icon" class="icon" src="{{ element.icon | prepend:'/pix/' | prepend: site.baseurl }}" />
@@ -8,5 +26,5 @@
       <span class="noicon"></span>
     {% endif %}
   {% endif %}
-  {{ element.title }}
+  {{ title }}
 </a>

@@ -2,7 +2,7 @@
 {% for name in include.context %}
   {% assign elements = include.elements | where:"name":name %}
   {% if elements.size == 0 %}
-    {% include element-block.html fa-icon=include.fa-icon title=name url=name %}
+    {% include element-block.html fa-icon = "fa-download" title = name url = name description = "" %}
   {% else %}
     {% assign element = elements | first %}
     {% include element-block.html %}
