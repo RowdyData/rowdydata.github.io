@@ -12,6 +12,7 @@ targets:
 - new-to-iati
 exercises:
 - personas
+- customer-journey
 docs:
 - 0-iati-15-min.slides
 - Many Ways to Use IATI Data.pptx
