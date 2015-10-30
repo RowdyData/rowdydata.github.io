@@ -2,6 +2,8 @@
   {% assign fa-icon = include.fa-icon %}
 {% elsif element.fa-icon %}
   {% assign fa-icon = element.fa-icon %}
+{% else %}
+  {% assign fa-icon = %}
 {% endif %}
 
 {% if include.title %}
@@ -17,7 +19,7 @@
 {% endif %}
 
 <a class="link" href="{{ url }}">
-  {% if fa-icon %}
+  {% if fa-icon != '' %}
     <span class="icon fa fa-2x {{fa-icon}}"></span>
   {% else %}
     {% if element.icon %}
