@@ -11,6 +11,17 @@ tags:
 - introduction
 targets:
 - begin-implementation
+exercises:
+- exclusion-policy
+- planning
+docs:
+- PlanningIntro.pdf
+- ExclusionsPermissions.pdf
+- Fictitious-project.pdf
+- PlanningYourProject.pptx
+- Planning IATI project - A2.pdf
+- Prototype guide.docx
+- Prototype template_IATI fields simplified.xlsx
 
 schedule:
 -
@@ -106,15 +117,13 @@ schedule:
 
 ---
 
-The [Starting off workshop](1-starting) explored the implementation schedule
-and how IATI can work (be useful, be implemented) in your organisation.
+The [Starting off workshop](1-starting) explored the implementation schedule and how IATI can work (be useful, be implemented) in your organisation.
 
-This second workshop is intended to deepen that understanding, and work
-towards a first draft plan for implementation.
+This second workshop is intended to deepen that understanding, and work towards a first draft plan for implementation.
 
 ## Topics
 
-- Background on rights, licenses, coverage, and exclusions.
-- Basics of what an "activity" is in your organisation.
-- Blueprint of an implementation plan.
-- Understanding who needs to be "on the team".
+-   Background on rights, licenses, coverage, and exclusions.
+-   Basics of what an "activity" is in your organisation.
+-   Blueprint of an implementation plan.
+-   Understanding who needs to be "on the team".
