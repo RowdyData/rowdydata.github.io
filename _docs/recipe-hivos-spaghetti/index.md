@@ -1,15 +1,16 @@
 ---
 title: "Recipe: Spaghetti à la Hivos"
-description: >
-  Showing the network of partner organisations and countries of Hivos
-name: recipe-hivos-spaghetti
-fa-icon: fa-bar-chart
+description: "Showing the network of partner organisations and countries of Hivos\n"
+name: "recipe-hivos-spaghetti"
+"fa-icon": "fa-bar-chart"
+published: true
 ---
+
 
 Spaghetti à la Hivos
 ====================
 
-Showing Hivos’ partner network using IATI data.
+Showing the Hivos’ partner network using IATI data.
 
 ![preview]
 
