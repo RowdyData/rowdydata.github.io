@@ -61,8 +61,6 @@ defaults:
 prose:
   media: 'pix'
   ignore:
-    - index.md
-    - _config.yml
     - /_layouts
     - /_includes
     - /_sass
@@ -70,3 +68,9 @@ prose:
     - /fonts
     - /js
     - /lib
+    - _config.yml
+    - .gitignore
+    - .gitmodules
+    - feed.xml
+    - generate-assets
+    - Gemfile
