@@ -2,46 +2,62 @@
 title: How to contribute?
 ---
 
-There are a few ways to contribute. At the moment, this all works via the
-_source code_ platform: GitHub. If you're not familiar with GitHub, we hope
-this page provides an introduction.
+RowdyData is open for contributions. You will need to have an account on [GitHub](https://github.com) to add your requests or information.
 
-You can contribute in various ways:
+There are three major ways to contribute:
 
 * Report a problem or suggest an improvement.
-* Send a request to include your contribution.
+* Directly edit the content (only for team members).
+* Create a request to include your contribution.
 
-We'll outline the process, and gradually introduce you to become an _open source
-contributor_!
+We'll outline the process, and gradually introduce you to become an _open source contributor_!
 
-# Overview of the work flow
+## About GitHub
 
-All errors and suggestions for improvements of the website can be recorderd as
-_issues_. Issues can be organised with _tags_.
+### GitHub account
 
-The issue can be assignd to someone, who is then overseeing that the error is
-fixed or the suggestion discussed and incorporated.
+GitHub is a place to collaborate on open source projects. If you don't have an account yet, simply go to [GitHub](https://github.com) and sign up. GitHub is free if you only use publicly available projects.
 
-The work itself is done in a copy of the website (in GitHub terms: you _fork_
-our repository to have your own copy, and then you can create a _branch_ to
-keep all the work related to a single issue separated from work on other
-issues.
+Each project in GitHub is held in a _repository_. Two parts of the repository are important for now:
 
-Eventually, you want to offer your work for inclusion in our repository. For
-that, you create a _pull request_. This makes it possible for others to review
-your changes, to perhaps further improve it.
+#### Files and folders
 
-When the _pull request_ is accepted, it can be _merged_ into the source code
-of the website, and a new version of the website will be generated from that!
+The files and folders are managed by a _version control system_: you can edit one or more files, and save all the changes in a single _commit_ action.
 
-![](work-flow.png)
+Each commit is kept forever, so it is always possible to go back to an earlier version. For instance after making a mistake.
 
-# How to
+#### Issues
 
-Pick what you like to do:
+All suggestions for improvements and mistakes found can be registered on the _issue list_. Each issue has its own discussion, and a workflow: when we're ready to work on it, we'll give it a tag "Ready", when we are working on it, it will have a tag "In Progress", and the issue will be closed once we're done.
 
-* [How to set up my GitHub account](setup-github.html)
-* [How to see what we are working on](see-our-work.html)
-* [How to report an issue](report-an-issue.html)
-* [How to create my own copy (_fork_) of the website?](fork.html)
-* [How to submit my work (_pull request_)](make-a-pull-request.html)
+## Report a problem or suggest an improvement
+
+This is the easiest way to help. Use the button at then end of the page:
+
+<div class="btn btn-default"><a href="#"><img src="{{ site.baseurl }}/pix/icon/svg/notification.svg"> report an issue</a></div>
+
+Use the filter to check if someone else already reported it. If not, use the green "New issue" button to add it.
+
+You can also read the discussions around issues, and maybe contribute by verifying a report or adding your insight.
+
+## Directly edit the content
+
+This only works if you are a team member: it allows you to directly edit any page on the website, by using the button at the end of the page:
+
+<div class="btn btn-default"><a href="#"><img src="{{ site.baseurl }}/pix/icon/prose_io.png"> edit (team only)</a></div>
+
+You will go to a special web editor. First, you will need to give it permission to use your account.
+
+## Create a request to include your contribution
+
+This is relatively the hardest step. You create a _clone_ of our repository, make the edits you like to see, and then create a _Pull requst_ to ask us to include those edits in our repository.
+
+Use the edit button at the end of the page to directly go to the source of that page:
+
+<div class="btn btn-default"><a href="#"><img src="{{ site.baseurl }}/pix/icon/svg/pencil.svg"> edit this page</a></div>
+
+You will see the source from which the page was generated. Click the pencil in the top-right to start editing. GitHub will guide you through the steps.
+
+## More information
+
+There is a lot more you can learn about this process. We'll try to add relevant information over time. You may want to explore [the Guides provided by GitHub](https://guides.github.com/).

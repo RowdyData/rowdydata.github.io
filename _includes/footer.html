@@ -6,9 +6,10 @@
       <div class="footer-col">
         <div class="btn-group btn-group-sm" role="group">
           <div class="btn btn-default"><a href="{{ site.baseurl }}/about/how-to/contribute.html"><img src="{{ site.baseurl }}/pix/icon/svg/question.svg"> how to contribute?</a></div>
-          <div class="btn btn-default"><a href="{{ site.github.issues_url }}/issues"><img src="{{ site.baseurl }}/pix/icon/svg/notification.svg"> report an issue</a></div>
+          <div class="btn btn-default"><a href="{{ site.github.issues_url }}"><img src="{{ site.baseurl }}/pix/icon/svg/notification.svg"> report an issue</a></div>
           {% if page.relative_path %}{% assign path = page.relative_path %}{% else %}{% assign path = page.path %}{% endif %}
           <div class="btn btn-default"><a href="{{ site.github.repository_url }}/blob/master/{{ path }}"><img src="{{ site.baseurl }}/pix/icon/svg/pencil.svg"> edit this page</a></div>
+          <div class="btn btn-default"><a href="http://prose.io/#RowdyData/rowdydata.github.io/edit/master/{{ path }}"><img src="{{ site.baseurl }}/pix/icon/prose_io.png"> edit (team only)</a></div>
         </div>
       </div>
     </div>
