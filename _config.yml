@@ -56,3 +56,17 @@ defaults:
       type: "exercises"
     values:
       layout: "exercise"
+      
+# https://github.com/prose/prose/wiki/Prose-Configuration
+prose:
+  media: 'pix'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /_sass
+    - /css
+    - /fonts
+    - /js
+    - /lib
