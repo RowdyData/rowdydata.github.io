@@ -22,28 +22,20 @@ transition: convex
 
 ![](/pix/iati-post.png)
 
-{% include slides-end %}
-
 {% include slides-next %}
-<!-- next column -->
-
-{% include slides-start %}
 
 # IATI Standard
 
-### Goal
+To exchange comprehensive, forward-looking data on development activities.
 
-- Exchange information on development activities
+Under multi-stakeholder governance.
 
-### Who
-
-- Multi-stakeholder: donors, NGOs, recipients, watch dogs
-
-### Evolving
+### Evolving standard
 
 - Version 1.01 in February 2011
 - Version 1.04 in May 2014
 - Version 2.01 in January 2015
+- Version 2.02 in December 2015
 
 {% include slides-next %}
 
@@ -96,9 +88,12 @@ from presentation...
 
 {% include slides-next %}
 
-## Various starting points
+## Your starting point?
 
 ![](starting-points.png){: .col-md-7 .col-md-offset-1}
+
+(but don't stop there!)
+{: .col-md-12}
 
 {% include slides-end %}
 
@@ -113,17 +108,17 @@ from presentation...
 
 # Steps to take
 
-### Start
+### Start a team
 
-- Implementation schedule
+Implementation schedule
 
-### Scope and planning
+### Scope and plan
 
-### Getting the data in shape
+### Get the data in shape
 
-### Publish
+### Publish and use
 
-- Organisation and Activities files
+Organisation and Activities files
 
 {% include slides-next %}
 
@@ -150,25 +145,27 @@ from presentation...
 
 {% include slides-start %}
 
-# Aspects
+# Implementing IATI
 
 ### Organisational
 
-- Why, with whom?
+Why, with whom?
 
-### Technical
-
-- Which data, which tools?
+What to exclude?
 
 ### Legal
 
-- Liability, rights, security?
+Liability, rights, security?
+
+### Technical
+
+Which data, which tools?
 
 {% include slides-next %}
 
-# Stakeholders
+# With whom?
 
-### Internal
+### Staff
 
 - Form an "open data team"
 - Involve multiple disciplines
@@ -182,6 +179,35 @@ from presentation...
 
 - What do they want?
 - What do they offer?
+
+{% include slides-next %}
+
+# Exclusion policy
+
+### “Open, unless”
+
+- International relations
+- Safety and security
+- Personal information
+- Commercial information
+- Legally excluded
+- Threshold values
+
+{% include slides-next %}
+
+# Licenses
+
+### Intellectual property rights
+
+Copyright and Database rights
+
+### Right to reuse
+
+For IATI: public domain or attribution-only
+
+### Liability
+
+Disclaimer/proclaimer
 
 {% include slides-next %}
 
@@ -202,54 +228,23 @@ from presentation...
 
 {% include slides-next %}
 
-# Exclusions and thresholds
+# Which tools?
 
-### Grounds for exclusion (“open, unless”)
+### Online tool (AidStream)
 
-- International relations
-- Safety and security
-- Personal information
-- Commercial information
-- Legally excluded
+No IT capacity needed but manual and extra work
 
-### Threshold values
+### <del>Convert spreadsheets</del>
 
-{% include slides-next %}
+Not yet available for IATI 2.01 or 2.02...
 
-# Licenses
+### IATI platform (Akvo, DevResults, ...)
 
-### Intellectual property rights
+Fit your work in their model
 
-- Copyright
-- Database rights
+### Integrated with your own systems
 
-### Right to reuse
-
-- Public domain or attribution-only
-
-### Liability
-
-- Disclaimer/proclaimer
-- Purpose of the data, quality
-
-{% include slides-next %}
-
-# Tools
-
-### Input in an online tool
-
-- Few data
-- No own system
-
-### Convert spreadsheets
-
-- More data
-- Available as structured data
-
-### Integrate in project managent software
-
-- Lots of data
-- Own systems and IT capacity
+Adapt your own model to produce IATI
 
 {% include slides-end %}
 
@@ -260,7 +255,9 @@ from presentation...
 
 # Next...
 
-## Ok, I have an Activities File. Now what?
+## Ok, I have an Activities File.
+
+## Now what?
 
 ![](/pix/iati-activity-file.png){: .col-md-5}
 ![](/pix/iati-post.png){: .col-md-5 .col-md-offset-2}

@@ -18,6 +18,7 @@ docs:
 - Many Ways to Use IATI Data.pptx
 - Persona template.docx
 - IATI Customer journey.docx
+- Implementation Schedule for NGO's.xls
 schedule:
 -
   time: "13:00"
